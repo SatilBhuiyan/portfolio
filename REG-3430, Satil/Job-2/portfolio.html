@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Academic & Professional Background</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfo<span class="highlight">lio</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#feedback">Feedback</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-title-section" style="background-image: linear-gradient(rgba(30, 41, 59, 0.85), rgba(30, 41, 59, 0.85)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1400&q=80');">
+        <div class="page-title-content">
+            <h1>My Qualifications & Experience</h1>
+            <p>A comprehensive overview of my academic background, skill sets, and work history.</p>
+        </div>
+    </section>
+
+    <section class="skills-section container">
+        <h2 class="section-title">Special Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span>Frontend Architecture (HTML/CSS/JS)</span>
+                    <span>95%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 95%;"></span></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span>Competitive programming</span>
+                    <span>85%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 85%;"></span></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span>Backend Systems & APIs</span>
+                    <span>80%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 80%;"></span></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span>Database Administration</span>
+                    <span>75%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 75%;"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section">
+        <div class="container grid-2-equal">
+            
+            <div class="timeline-column">
+                <h2 class="column-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="timeline-box">
+                    <div class="timeline-item">
+                        <span class="duration">2020 - 2024</span>
+                        <h3>Master of Science in Computer Science</h3>
+                        <h4>Global Tech University</h4>
+                        <p>Specialized in Advanced Software Engineering, Cloud Architectures, and Interactive Interface frameworks. Graduated with honors.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="duration">2016 - 2020</span>
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <h4>State Polytechnic Institute</h4>
+                        <p>Acquired strong foundational roots in object-oriented programming, data structures, algorithm optimization, and responsive interface setups.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-column">
+                <h2 class="column-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
+                <div class="timeline-box">
+                    <div class="timeline-item">
+                        <span class="duration">2024 - Present</span>
+                        <h3>Senior Frontend Architect</h3>
+                        <h4>PixelCraft Studio Inc.</h4>
+                        <p>Leading a dynamic team of developers building highly responsive client applications. Engineered systems reducing layout rendering loads by 40%.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="duration">2021 - 2024</span>
+                        <h3>Full Stack Developer</h3>
+                        <h4>Nexus Digital Solutions</h4>
+                        <p>Developed dynamic data-driven responsive products. Collaborated cross-functionally to turn UX prototypes into live production architectures.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="certifications-section container">
+        <h2 class="section-title">Training & Certifications</h2>
+        <div class="certs-grid">
+            <div class="cert-card">
+                <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                <h3>Advanced JavaScript Architect</h3>
+                <p>Issued by Tech Academy International • Verified Badge Holder</p>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Secure Application Development</h3>
+                <p>Issued by Cyber Security Consortium • Professional Level Certification</p>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+                <h3>Cloud Solutions Specialist</h3>
+                <p>Issued by Global Cloud Provider Authority • Architecture Track</p>
+            </div>
+        </div>
+    </section>
+
+   <footer class="site-footer">
+    <div class="footer-container">
+        <!-- Left: Brand & Copyright -->
+        <div class="footer-brand">
+            <p class="copyright">&copy; 2026 Portfolio Studio.</p>
+            <p class="tagline">Crafting digital experiences.</p>
+        </div>
+
+        <!-- Center: Dynamic Live Clock Widget -->
+        <div class="footer-clock">
+            <span class="clock-icon">🕒</span>
+            <div id="liveClock" class="live-clock">Loading date & time...</div>
+        </div>
+
+        <!-- Right: Social Links with Tooltips -->
+        <div class="footer-socials">
+            <a href="#" aria-label="GitHub" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+    <script src="JS/scripts.js"></script>
+</body>
+</html>

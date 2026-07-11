@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfo<span class="highlight">lio</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Image/second_c.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/Image/second.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/Image/third.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section id="about" class="about-section container">
+        <div class="about-img">
+            <img src="/Image/myphoto.jpg">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello! I'm Satil Bhuiyan, passionate creator dedicated to building high-quality web applications. With a
+                strong foundation in modern web technologies, I love bridging the gap between brilliant design and
+                robust functionality.</p>
+            <p>When I'm not coding, you can find me exploring new design trends, reading, or drinking way too much
+                coffee.</p>
+        </div>
+    </section>
+
+    <section id="mission" class="mission-vision-section">
+        <div class="container grid-2">
+            <div class="mv-card">
+                <i class="fas fa-rocket mv-icon"></i>
+                <h3>Career Mission</h3>
+                <p>To leverage cutting-edge technology to build scalable, impactful digital solutions that improve daily
+                    lives and optimize business growth globally.</p>
+            </div>
+            <div class="mv-card">
+                <i class="fas fa-eye mv-icon"></i>
+                <h3>Professional Vision</h3>
+                <p>To become a leading technological architect, fostering innovation and setting new standards for clean
+                    code and intuitive user experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section container">
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid">
+            <div class="service-box">
+                <i class="fas fa-code service-icon"></i>
+                <h3>Web Development</h3>
+                <p>Building highly responsive, fast, and optimized websites tailored perfectly to your requirements.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-paint-brush service-icon"></i>
+                <h3>Competitive programming</h3>
+                <p>Competitive programming is a mind sport where participants solve logic and math puzzles within strict
+                    time and memory limits using computer programs.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-mobile-alt service-icon"></i>
+                <h3>App Optimization</h3>
+                <p>Enhancing performance, responsiveness, and SEO strategies for your existing web properties.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="feedback-section container">
+        <h2 class="section-title">Client Feedback</h2>
+        <div class="feedback-grid">
+            <div class="feedback-card">
+                <p class="quote">"An absolute professional. Delivered the project ahead of schedule and exceeded our
+                    technical expectations."</p>
+                <div class="client-info">
+                    <h4>Efti RK</h4>
+                    <span>CEO, TechStart</span>
+                </div>
+            </div>
+            <div class="feedback-card">
+                <p class="quote">"Great eye for details and outstanding responsiveness. Our conversion rates went up
+                    drastically after the redesign!"</p>
+                <div class="client-info">
+                    <h4>Siam Bhuiyan</h4>
+                    <span>Founder, CreativeCo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Left: Brand & Copyright -->
+            <div class="footer-brand">
+                <p class="copyright">&copy; 2026 Portfolio Studio.</p>
+                <p class="tagline">Crafting digital experiences.</p>
+            </div>
+
+            <!-- Center: Dynamic Live Clock Widget -->
+            <div class="footer-clock">
+                <span class="clock-icon">🕒</span>
+                <div id="liveClock" class="live-clock">Loading date & time...</div>
+            </div>
+
+            <!-- Right: Social Links with Tooltips -->
+            <div class="footer-socials">
+                <a href="#" aria-label="GitHub" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/scripts.js"></script>
+</body>
+
+</html>

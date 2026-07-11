@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Get In Touch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfo<span class="highlight">lio</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-title-section" style="background-image: linear-gradient(rgba(30, 41, 59, 0.85), rgba(30, 41, 59, 0.85)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80');">
+        <div class="page-title-content">
+            <h1>Get In Touch</h1>
+            <p>Have an idea, project proposal, or query? Drop a message below or contact me directly.</p>
+        </div>
+    </section>
+
+    <section class="contact-main container">
+        <div class="contact-grid">
+            
+            <div class="contact-info-column">
+                <h2>Contact Information</h2>
+                <p class="info-intro">Feel free to reach out via these direct lines. I typically respond to all serious design and development proposals within 24 business hours.</p>
+                
+                <div class="info-list">
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Me</h4>
+                            <p><a href="mubc.shatil@gmail.com">mubc.shatil@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Call Me</h4>
+                            <p><a href="01837914161">01837914161</a></p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Office Address</h4>
+                            <p>Monipur, Mirpur, Dhaka-1216</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-column">
+                <h2>Send A Message</h2>
+                <form id="portfolioContactForm" novalidate>
+                    
+                    <div id="formFeedback" class="form-feedback"></div>
+
+                    <div class="form-group">
+                        <label for="userName">Full Name <span class="req">*</span></label>
+                        <input type="text" id="userName" name="name" placeholder="Satil Bhuiyan">
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">Email Address <span class="req">*</span></label>
+                        <input type="email" id="userEmail" name="email" placeholder="Satil@example.com">
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userPhone">Phone Number <span class="req">*</span></label>
+                        <input type="tel" id="userPhone" name="phone" placeholder="01837914161">
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userAddress">Physical Address</label>
+                        <input type="text" id="userAddress" name="address" placeholder="City, Country">
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userMessage">Message Content <span class="req">*</span></label>
+                        <textarea id="userMessage" name="message" rows="5" placeholder="Describe your project details..."></textarea>
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">Submit Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="map-section">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.702528983427!2d90.34355871306953!3d23.794562358242064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51aba9e64d!2zTWlycHVyLTEsIOCmouCmvuCmleCmvg!5e0!3m2!1sbn!2sbd!4v1783767433757!5m2!1sbn!2sbd" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+   <footer class="site-footer">
+    <div class="footer-container">
+        <!-- Left: Brand & Copyright -->
+        <div class="footer-brand">
+            <p class="copyright">&copy; 2026 Portfolio Studio.</p>
+            <p class="tagline">Crafting digital experiences.</p>
+        </div>
+
+        <!-- Center: Dynamic Live Clock Widget -->
+        <div class="footer-clock">
+            <span class="clock-icon">🕒</span>
+            <div id="liveClock" class="live-clock">Loading date & time...</div>
+        </div>
+
+        <!-- Right: Social Links with Tooltips -->
+        <div class="footer-socials">
+            <a href="#" aria-label="GitHub" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+    <script src="JS/scripts.js"></script>
+</body>
+</html>
